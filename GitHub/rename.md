@@ -15,7 +15,7 @@ git branch -m 新しいブランチ名
 # 変更後のローカルブランチをpush(Git Hub Desktopではなく、コマンドから行うこと)
 git push -u origin 現在のブランチ名
 
-pushしようとして*Invalid username or password.*エラーが出た場合は、次の項目参照
+pushしようとして、Invalid username or password.エラーが出た場合は、次の項目参照
 
 # 変更前のリモートブランチを削除
 git push origin :リモートのブランチ名
