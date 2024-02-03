@@ -1,6 +1,6 @@
 # ブランチの名前を修正する
 
-## ローカルブランチ
+## ローカルブランチの名前を変更する
 ```sh
 # 基本
 git branch -m 古いブランチ名 新しいブランチ名
@@ -9,15 +9,13 @@ git branch -m 古いブランチ名 新しいブランチ名
 git branch -m 新しいブランチ名
 ```
 
-## リモートブランチ
+## リモートブランチの名前を変更する（変更前のブランチをpush済みの場合）
 - ローカルのブランチ名を変更後、下記を実行
 ```sh
 # 変更後のローカルブランチをpush(Git Hub Desktopではなく、コマンドから行うこと)
 git push -u origin 現在のブランチ名
 
-
-# pushしようとして、パスワード不正エラーが出た場合は次へ
-Invalid username or password.
+pushしようとして*Invalid username or password.*エラーが出た場合は、次の項目参照
 
 # 変更前のリモートブランチを削除
 git push origin :リモートのブランチ名
