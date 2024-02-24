@@ -18,7 +18,7 @@ def slice_num(input)
   tens_place = input / 10 % 10
   ones_place = input % 10
   return tens_place, ones_place
-  # 二つの戻り値を明示
+  # **二つの戻り値を明示**
 end
 
 tens_place, ones_place = slice_num(input)
