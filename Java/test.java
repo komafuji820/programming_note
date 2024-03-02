@@ -1,8 +1,10 @@
-String city = "東京";
-String town = "東京";
+class test {
+	public static void main (String[] args) {
 
-city == town
-// falseが返る
+    String[] animals = {"こぶた", "たぬき", "きつね"};
 
-city.equals(town)
-// trueが返る
+    for(int i = 0; i < animals.length; i++){
+      System.out.println(animals[i]);
+    }
+  }
+}
