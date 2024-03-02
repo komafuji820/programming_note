@@ -45,3 +45,26 @@ number5 += 10;
 System.out.println(number5);
 // number5の値は15
 ```
+
+5. String型と演算子
+String型は参照型のため、中に格納されているデータは「場所情報」となる。
+したがって、String型同士に比較演算子を用いるとエラーになる。
+比較する場合は、.equals()を使用する。
+```java
+class test {
+	public static void main (String[] args) {
+		String city = "東京";
+		String town = new String("東京");
+    // String town = "東京";
+    // とすると、trueを返すことはできる。しかしコードの可読性が落ちるので、Stringの比較は必ずequalsを使うこと！
+
+		boolean value = city == town;
+		// falseが返る
+
+		boolean value = city.equals(town);
+    // trueが返る
+
+		System.out.println(value);
+	}
+}
+```
