@@ -14,6 +14,12 @@ ALTER TABLE SAMPLE_3_1_1
 -- BIRTH_PLACEというカラムを削除する
 ```
 
+### すべてのデータの削除（テーブルは残る）
+```sql
+TRUNCATE SAMPLE_3_1_1 ;
+-- SAMPLE_3_1_1 というテーブル内のデータを全て削除する
+```
+
 ### テーブル自体の削除
 ```sql
 DROP TABLE SAMPLE_3_1_1 ;
