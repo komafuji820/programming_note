@@ -1,6 +1,4 @@
-## Data Definition Language
-
-### create_tableの記述例
+## create_tableの記述例
 ```sql
 CREATE TABLE SAMPLE (
   ID                INT          NOT NULL PRIMARY KEY                 COMMENT 'ID'       ,
