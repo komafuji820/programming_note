@@ -1,9 +1,3 @@
-### カラムの型
-整数型 int, tinyin, bigint
-小数点型 double, float
-文字列 char, varchar
-日付 date, timestamp
-
 ### DBMS
 Javaなどのアプリケーション ↔︎ DBMS ↔︎ DB
 アプリからの要求を元に、データの操作などを行う。
@@ -18,6 +12,6 @@ Javaなどのアプリケーション ↔︎ DBMS ↔︎ DB
 3. ユーザーに対し、データへの参照権限を与える
 
 ### SQLの3分類
-1. DML(データベースを操作する)
-2. DDL(テーブルなど、データを格納する構造の定義を行う)
-3. DCL(アクセス権やデータベースの状態管理を行う)
+1. DML(Data Manipulation Language:  データベースを操作する)
+2. DDL(Data Definition Language:    テーブルなど、データを格納する構造の定義を行う)
+3. DCL(Data Control Language:       アクセス権やデータベースの状態管理を行う)
