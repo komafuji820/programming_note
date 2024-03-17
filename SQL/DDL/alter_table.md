@@ -26,6 +26,7 @@ ALTER TABLE SAMPLE_3_1_1
 - そのため、たとえ変更がなくても、型の指定が必須。
 
 ### 削除
+カラムの削除
 ```sql
 ALTER TABLE SAMPLE_3_1_1
   DROP BIRTH_PLACE ;
