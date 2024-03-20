@@ -45,6 +45,21 @@ SELECT *
 -- AGEが18以上20以下のデータが抽出される。
 ```
 
+```sql
+SELECT *
+  FROM SAMPLE_4_1
+ WHERE AGE IS NULL ;
+-- NULLに対し、演算子は基本的に使用できない。
+-- NULLのデータを抽出する際には、ISを使用する。
+```
+
+```sql
+SELECT ID       AS STUDENT_ID       , 
+       NAME     AS STUDENT_NAME
+  FROM SAMPLE_4_1 ;
+-- ASによって、抽出後のカラム名を指定できる
+```
+
 ## WHEREで用いる演算子について
 NOT > AND > ORの順に見ること。
 ```sql
