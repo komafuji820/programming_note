@@ -1,0 +1,9 @@
+## GROUP BY
+<!-- GROUP BY -->
+```sql
+SELECT *
+  FROM SAMPLE_4_1
+ WHERE GENDER = 'M'
+ GROUP BY FAMILY_NAME    -- 集約キー。データをグループ化する。
+ ORDER BY BIRTHDAY DESC;
+```

@@ -1,0 +1,20 @@
+## SELECT文の構造
+
+### 例文
+```sql
+SELECT SCHOOL_NAME AS SCHOOL_NAME   ,
+       MAX(SCORE)  AS HIGH_SCORE    ,
+       AVG(SCORE)  AS AVERAGE_SCORE
+  FROM SAMPLE_4_4
+WHERE SCHOOL_NAME IS NOT NULL
+GROUP BY SCHOOL_NAME
+HAVING COUNT(*) >= 3
+ORDER BY HIGH_SCORE DESC , AVERAGE_SCORE DESC , SCHOOL_NAME ;
+```
+
+### SELECT文の処理順序
+FROM → WHERE → GROUP BY → 関数(COUNT, MAX, AVG...) → HAVING → SELECT → ORDER BY
+
+### 処理順序が与える影響
+- ASで指定したカラム名は、ORDER BYでは使用できるが、WHEREでは使用できない。
+- 関数を利用した絞り込みは、WHEREでは使用できない。（そのためにHAVINGがある）
