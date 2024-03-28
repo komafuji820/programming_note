@@ -1,16 +1,25 @@
 ## 内部結合
 内部結合とは、結合キーをもとに2つのテーブルの情報を結合させること
 
-基本の書き方
+- 基本の書き方
 ```sql
 SELECT SAMPLE_4_2.HOME_ID , SAMPLE_4_2.HOME_NAME , SAMPLE_4_1.NAME
   FROM SAMPLE_4_1 INNER JOIN SAMPLE_4_2 ON SAMPLE_4_2.STUDENT_ID = SAMPLE_4_1.ID
  ORDER BY SAMPLE_4_2.HOME_ID ;
 ```
 
-テーブル名の省略
+- テーブル名の省略（エイリアス）
 ```sql
 SELECT b.HOME_ID , b.HOME_NAME , a.NAME
   FROM SAMPLE_4_1 a INNER JOIN SAMPLE_4_2 b ON b.STUDENT_ID = a.ID
  ORDER BY b.HOME_ID ;
+```
+
+- WHERE句を用いることもある(INNER JOINの方が望ましい)
+```sql
+SELECT SAMPLE_4_2.HOME_ID , SAMPLE_4_2.HOME_NAME , SAMPLE_4_1.NAME
+  FROM SAMPLE_4_1 ,
+       SAMPLE_4_2
+ WHERE SAMPLE_4_2.PET_ID  = SAMPLE_4_1.ID
+ ORDER BY SAMPLE_4_2.HOME_ID ;
 ```
